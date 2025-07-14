@@ -1,5 +1,5 @@
-# Add'O'Mint !
+# Ado-Minto !
 
 ## Name's origin
 
-Admin → アドミン → アド=Add'O & ミン=Mint → Add'O'Mint
+Admin → アドミン → Ado-Min → Ado-Minto
