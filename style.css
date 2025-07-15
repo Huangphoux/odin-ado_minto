@@ -278,7 +278,6 @@ ul {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr;
 }
 
 .sidebar {
@@ -289,8 +288,35 @@ ul {
 
 .header,
 .actions {
-    display: flex;
     padding: 0 20px;
+
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    place-items: center;
+}
+
+button {
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #1992d4;
+    color: white;
+    font-weight: bold;
 }
 
 .search-bar {
