@@ -277,14 +277,65 @@ ul {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
     background-color: #1992d4;
 
     grid-row: 1 / 4;
+
+    display: grid;
+    grid-template-rows: 100px 280px;
+
+    color: white;
+
 }
+
+.title img {
+    filter: invert(100%);
+}
+
+.tab img,
+.others img {
+    height: 20px;
+    filter: invert(100%);
+}
+
+.sidebar .title {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    font-weight: bolder;
+    font-size: larger;
+
+    align-items: center;
+
+    position: relative;
+    bottom: 10px;
+}
+
+.title img {
+    height: 40px;
+    justify-self: center;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-auto-rows: 40px;
+
+    align-items: center;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
 
 .header,
 .actions {
