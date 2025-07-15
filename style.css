@@ -426,7 +426,7 @@ button {
 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
     gap: 20px;
 
     padding: 40px 20px;
@@ -473,35 +473,64 @@ button {
     gap: 20px;
 
     justify-content: flex-end;
+
+    margin-right: 10px;
 }
 
 .card img {
     height: 20px;
 }
 
-.card p:nth-child(2) {
-    line-height: 1.2em;
-    height: 3.6em;
+.card .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card p:nth-child(2),
+.post p:nth-child(2) {
+    color: rgb(100, 100, 100);
+
+    font-size: 14px;
+
+    height: 5lh;
 
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.title {
-    font-weight: bold;
+.post p:nth-child(2) {
+    height: 3lh;
 }
 
 .announcements .container,
 .trending .container {
     display: grid;
-
     grid-template-columns: 1fr;
+    gap: 20px;
 
     padding: 40px;
 
     background-color: white;
     border-radius: 10px;
+}
+
+.announcements {
+    margin-bottom: 20px;
+}
+
+.post .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.post {
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(193, 193, 193);
+}
+
+.post:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
 }
