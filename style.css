@@ -350,7 +350,7 @@ li {
 
 .header {
     display: grid;
-    grid-template-columns: 0.3fr 5fr 0.5fr 0.5fr 1.2fr;
+    grid-template-columns: auto 3fr 0.5fr auto 0.8fr;
     align-items: center;
     gap: 20px;
 
@@ -359,7 +359,7 @@ li {
 }
 
 .search-bar {
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(230, 230, 230);
     border-radius: 30px;
     height: 30px;
 }
@@ -373,32 +373,48 @@ li {
 .profile-icon {
     height: 80px;
     border-radius: 100px;
+
+    justify-self: flex-end;
 }
 
 .header .profile-icon {
     height: 50px;
 }
 
-.actions {
+.header+.actions {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 0.5fr 3fr 2fr;
+    gap: 20px;
+    align-items: center;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
     place-items: center;
 }
 
 button {
     border: none;
-    padding: 5px 20px;
+    padding: 7px 30px;
     border-radius: 20px;
     background-color: #1992d4;
     color: white;
     font-weight: bold;
 }
+
+.greetings {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.greetings p {
+    font-size: 16px;
+}
+
+
 
 
 /* END */
@@ -414,6 +430,8 @@ button {
 
     padding: 20px;
     gap: 20px;
+
+    box-shadow: inset 0 10px 10px -7px rgba(0, 0, 0, 0.2);
 }
 
 .projects {
