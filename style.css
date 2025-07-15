@@ -280,19 +280,24 @@ ul {
     grid-template-columns: 1fr 5fr;
 }
 
+/* START */
+/* SIDEBAR */
+/* START */
+
 .sidebar {
     background-color: #1992d4;
+    color: white;
 
     grid-row: 1 / 4;
 
     display: grid;
     grid-template-rows: 100px 280px;
-
-    color: white;
-
 }
 
 .title img {
+    justify-self: center;
+
+    height: 40px;
     filter: invert(100%);
 }
 
@@ -306,18 +311,18 @@ ul {
     display: grid;
     grid-template-columns: 1fr 3fr;
 
-    font-weight: bolder;
-    font-size: larger;
-
     align-items: center;
 
-    position: relative;
-    bottom: 10px;
+    font-weight: bolder;
+    font-size: 25px;
 }
 
-.title img {
-    height: 40px;
-    justify-self: center;
+
+.sidebar ul {
+    padding-left: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
 }
 
 li {
@@ -328,25 +333,50 @@ li {
     align-items: center;
 }
 
-.sidebar ul {
-    padding-left: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
+/* END */
+/* SIDEBAR */
+/* END */
 
 
 
+/* START */
+/* HEADER ACTIONS */
+/* START */
 
 .header,
 .actions {
-    padding: 0 20px;
-
-
+    padding: 10px 40px;
 }
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 5fr 0.5fr 0.5fr 1.2fr;
+    align-items: center;
+    gap: 20px;
+
+    font-size: large;
+    font-weight: bold;
+}
+
+.search-bar {
+    background-color: rgb(222, 222, 222);
+    border-radius: 30px;
+    height: 30px;
+}
+
+.header img {
+    height: 25px;
+    justify-self: flex-end;
+}
+
+
+.profile-icon {
+    height: 80px;
+    border-radius: 100px;
+}
+
+.header .profile-icon {
+    height: 50px;
 }
 
 .actions {
@@ -370,12 +400,10 @@ button {
     font-weight: bold;
 }
 
-.search-bar {
-    background-color: lightgrey;
-    border-radius: 30px;
-    width: 50%;
-    height: 30px;
-}
+
+/* END */
+/* HEADER ACTIONS */
+/* END */
 
 .contents {
     background-color: #e2e8f0;
@@ -418,11 +446,11 @@ button {
 }
 
 .card p:nth-child(2) {
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 
 }
 
