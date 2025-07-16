@@ -9,6 +9,10 @@
 
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css" />
+        
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+        </style>
     </head>
     <body>
         <div class="container">
@@ -29,6 +33,9 @@
                     <li><img src="assets/cog.svg" />Settings</li>
                     <li><img src="assets/help-box.svg" />Support</li>
                     <li><img src="assets/lock-check.svg" />Privacy</li>
+
+                    <label for="color">Accent color</label>
+                    <input type="color" name="color" id="color" value="#1992d4" oninput="setAccentColor()"/>
                 </ul>
             </div>
 
@@ -168,22 +175,22 @@
                     <div class="label">Trending</div>
                     <ul class="container">
                         <li>
-                            <img src="assets/profile.jpg">
+                            <img src="assets/profile.jpg" />
                             <div class="username">tegan</div>
                             <div class="project">World Peace Builder</div>
                         </li>
                         <li>
-                            <img src="assets/profile.jpg">
+                            <img src="assets/profile.jpg" />
                             <div class="username">morgan</div>
                             <div class="project">Super Cool Project</div>
                         </li>
                         <li>
-                            <img src="assets/profile.jpg">
+                            <img src="assets/profile.jpg" />
                             <div class="username">kendall</div>
                             <div class="project">Life Changing App</div>
                         </li>
                         <li>
-                            <img src="assets/profile.jpg">
+                            <img src="assets/profile.jpg" />
                             <div class="username">alex</div>
                             <div class="project">No Traffic Maker</div>
                         </li>

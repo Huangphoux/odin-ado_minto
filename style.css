@@ -11,6 +11,7 @@
 
 html {
     font-family:
+        "Space Grotesk",
         system-ui,
         'Segoe UI',
         Roboto,
@@ -29,6 +30,8 @@ html {
 
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+
+    font-optical-sizing: auto;
 }
 
 /**
@@ -280,18 +283,27 @@ ul {
     grid-template-columns: 1fr 5fr;
 }
 
+:root {
+    --accent-color: #1992d4;
+}
+
 /* START */
 /* SIDEBAR */
 /* START */
 
 .sidebar {
-    background-color: #1992d4;
+    background-color: var(--accent-color);
     color: white;
 
     grid-row: 1 / 4;
 
     display: grid;
-    grid-template-rows: 100px 280px;
+    grid-template-rows: repeat(2, auto);
+
+    align-content: flex-start;
+    gap: 40px;
+
+    padding-top: 40px;
 }
 
 .title img {
@@ -400,9 +412,13 @@ button {
     border: none;
     padding: 7px 30px;
     border-radius: 20px;
-    background-color: #1992d4;
+    background-color: var(--accent-color);
     color: white;
     font-weight: bold;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
 }
 
 .greetings {
@@ -479,6 +495,8 @@ button {
 
 .card img {
     height: 20px;
+
+    cursor: pointer;
 }
 
 .card .title {
